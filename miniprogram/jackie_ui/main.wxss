@@ -2608,7 +2608,7 @@ swiper.round-dot .wx-swiper-dot.wx-swiper-dot-active {
 	margin: 0;
 	pointer-events: none;
 }
-
+/* 
 .card-swiper {
 	height: 420rpx !important;
 }
@@ -2634,7 +2634,7 @@ swiper.round-dot .wx-swiper-dot.wx-swiper-dot-active {
 .card-swiper swiper-item.cur .swiper-item {
 	transform: none;
 	transition: all 0.2s ease-in 0s;
-}
+} */
 
 
 .tower-swiper {

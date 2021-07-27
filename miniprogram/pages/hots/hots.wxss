@@ -1,6 +1,42 @@
 /* miniprogram/pages/hots/hots.wxss */
-.tower-swiper .tower-item {
+/* .tower-swiper .tower-item {
   transform: scale(calc(0.5 + var(--index) / 10));
   margin-left: calc(var(--left) * 100rpx - 150rpx);
   z-index: var(--index);
+} */
+
+.card_wraper{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,1fr);
+  grid-gap: 10px;
+  padding: 20rpx;
+}
+.card_wraper .card_item{
+  flex:1;
+  overflow: hidden;
+  border-radius: 18rpx;
+  background-color: #fff;
+}
+.poster{
+  width: 100%;
+}
+.poster_wraper{
+  position: relative;
+}
+.new{
+  display: inline-block;
+  background-color: #63c150;
+  color: #fff;
+  padding:  2rpx 4rpx;
+  font-size: 24rpx;
+  margin-right: 4rpx;
+}
+.rate{
+  position: absolute;
+  bottom:10rpx;
+  right: 10rpx;
+  color:#e09015;
+  padding-left: 10rpx;
+  font-size: 24rpx;
 }

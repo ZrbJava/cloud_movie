@@ -1,0 +1,10 @@
+<!--jackie_ui/swiper/swiper.wxml-->
+<swiper class="card-swiper {{dotStyle?'square-dot':'round-dot'}} " current="{{_curIndex}}" indicator-dots="true" circular="true" autoplay="{{true}}" interval="5000" duration="500" bindchange="swiperChange" indicator-color="#8799a3" indicator-active-color="#0081ff">
+  <swiper-item wx:for="{{swiperList}}" wx:key="index" class="{{_curIndex==index?'cur':''}}" >
+    <view class="swiper-item">
+      <image src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
+      <video src="{{item.url}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" wx:if="{{item.type=='video'}}"></video>
+    </view>
+  </swiper-item>
+</swiper>
+
